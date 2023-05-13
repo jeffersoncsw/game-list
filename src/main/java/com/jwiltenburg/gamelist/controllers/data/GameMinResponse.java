@@ -24,10 +24,10 @@ public class GameMinResponse {
 
     public GameMinResponse(GameMinProjection projection) {
         id = projection.getId();
-        title = projection.getTitle();
-        year = projection.getYear();
-        imgUrl = projection.getImgUrl();
-        shortDescription = projection.getShortDescription();
+        title = projection.getTitleGame();
+        year = projection.getYearGame();
+        imgUrl = projection.getImgUrlGame();
+        shortDescription = projection.getShortDescriptionGame();
     }
 
     public Long getId() {
