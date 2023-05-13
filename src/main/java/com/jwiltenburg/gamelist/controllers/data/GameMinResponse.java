@@ -1,6 +1,7 @@
 package com.jwiltenburg.gamelist.controllers.data;
 
 import com.jwiltenburg.gamelist.entities.Game;
+import com.jwiltenburg.gamelist.projections.GameMinProjection;
 
 public class GameMinResponse {
 
@@ -19,6 +20,14 @@ public class GameMinResponse {
         this.year = entity.getYear();
         this.imgUrl = entity.getImgUrl();
         this.shortDescription = entity.getShortDescription();
+    }
+
+    public GameMinResponse(GameMinProjection projection) {
+        id = projection.getId();
+        title = projection.getTitle();
+        year = projection.getYear();
+        imgUrl = projection.getImgUrl();
+        shortDescription = projection.getShortDescription();
     }
 
     public Long getId() {
