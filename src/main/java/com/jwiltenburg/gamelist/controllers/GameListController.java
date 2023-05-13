@@ -10,13 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/games")
+@RequestMapping(value = "/lists")
 public class GameListController {
 
     @Autowired
     private GameListService gameListService;
 
-    @GetMapping(value = "/lists")
+    @GetMapping
     public List<GameListResponse> findAll(){
         return gameListService.findAll();
     }
