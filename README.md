@@ -27,3 +27,10 @@
     url: jdbc:h2:mem:testdb
     username: sa
     password: 
+
+## Docker
+
+    Subir o container do docker a partir da raiz do projeto.
+
+    - docker-compose up -d
+
